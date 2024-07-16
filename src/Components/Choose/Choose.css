@@ -1,0 +1,18 @@
+.choose {
+  text-align: center;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+
+.choose  p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,58 @@
+.contact {
+  height: 100%;
+  h1 {
+    text-align: center;
+    margin: 80px 0px;
+  }
+}
+
+.contact-section {
+  display: flex;
+}
+
+.contact-left {
+  padding: 20px;
+  width: 50%;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-left: 50px;
+  margin-bottom: 100px;
+}
+
+.contact-right {
+  padding: 20px;
+  iframe {
+    width: 50vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+  
+  }
+
+  .contact-left{
+    width: 90%;
+    margin-bottom: 10px;
+  }
+  .contact-right {
+    
+    iframe {
+      width: 90vw;
+    }
+  }
+}
+
+
+@media (max-width: 650px){
+  .contact-left {
+    margin:10px;
+    width: 90%;
+padding: 4px;
+    p {
+      font-size: 18px;
+    }
+  }
+}

@@ -37,8 +37,6 @@ const Hero = () => {
             environment that makes you feel right at home.
           </p>
         </p>
-
-          
       </div>
     </div>
   );

@@ -1,7 +1,12 @@
 .hero {
   background-color: burlywood;
-  padding-top: 100px;
-  height: 100vh;
+  padding-top: 100px;  
+  padding-bottom: calc(100vh - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  
 }
 
 .slider {
@@ -13,6 +18,8 @@
   overflow: hidden;
 }
 
+
+
 .slide {
   position: absolute;
   top: 0;
@@ -23,6 +30,8 @@
   background-position: center;
   opacity: 0;
   transition: opacity 1s ease-in-out;
+  filter: blur(3px);
+
 }
 
 .slide.active {
@@ -31,13 +40,12 @@
 
 .text {
   position: absolute;
-  margin-top: 300px;
-  top: 20%;
+  top: 60%;
   left: 50%;
   width: 80vw;
+  text-align: center;
   transform: translate(-50%, -50%);
   color: rgb(255, 255, 255);
-  /* color: black; */
   background: rgba(0, 0, 0, 0.453);
   gap: 40px;
   padding: 20px;
@@ -70,6 +78,7 @@
 
 @media (max-width: 972px) {
   .text {
+    margin-top: 1vw;
     h1 {
       font-size: 40px;
     }
@@ -87,11 +96,11 @@
 
 @media (max-width: 800px) {
   .text {
-    margin-top: 360px;
     h1 {
       font-size: 29px;
     }
     .para {
+      gap: 5px;
       p:nth-child(2) {
         font-size: 22px;
       }
@@ -105,16 +114,18 @@
 
 @media (max-width: 500px) {
   .text {
-    margin-top: 360px;
+    padding: 5px;
     h1 {
-      font-size: 29px;
+      font-size: 25px;
     }
     .para {
+      gap: 5px;
+
       p:nth-child(2) {
-        font-size: 20px;
+        font-size: 18px;
       }
       p:nth-child(1) {
-        font-size: 22px;
+        font-size: 18px;
       }
     
     }

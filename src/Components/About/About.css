@@ -1,8 +1,6 @@
 .about {
-  height: 89vh;
-  /* background-color: red; */
-  padding: 100px;
-  padding-top: 30px;
+  padding: 0px 50px;
+  padding-top: 50px;
 }
 
 h2 {
@@ -40,7 +38,6 @@ p {
 
 @media (max-width: 658px) {
   .about {
-    height: 100vh;
     padding: 10px;
   }
   h2 {
@@ -54,7 +51,6 @@ p {
 
 @media (max-width: 549px) {
   .about {
-    height: 140vh;
   }
   h2 {
     margin-bottom: 5px;
